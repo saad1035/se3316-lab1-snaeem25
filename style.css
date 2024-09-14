@@ -33,5 +33,59 @@ h1 {
     text-align: center;
 }
 
+#searchBox {
+    width: 210px;
+    padding: 10px;
+    border: 2px solid #8A6240;
+    background-color: #FBEED7;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#searchBox::placeholder{
+    color: black;
+}
+
+#searchField {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#provinceSelect{
+    width: 235px;
+    padding: 10px;
+    border: 2px solid #8A6240;
+    background-color: #FBEED7;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+#provinceField {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-right: 65px;
+}
+
+label {
+    font-weight: bold;
+    color: #502B0F;
+}
+
+button {
+    background-color: #CABA9C;
+    border: 2px solid #8A6240;
+    border-radius: 10px;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #946D43;
+}
+
+
+
+
+
 
 
