@@ -5,21 +5,23 @@
     <title>Orchid Plants</title>
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="stylesheet" href="style.css">
-    <script type="text/javascript“ src="app.js"></script>
+    <link rel="stylesheet" href="style.css"> <!-- Link to CSS file -->
+    <script src="app.js"></script> <!-- Link to Javascript file -->
 </head>
 <body>
     <h1>Orchid Plants</h1>
 
+    <!-- Search by Botanical name -->
     <div id="searchField">
         <label for="searchBox">Search by Bontanical Name:</label>
-        <input type="text" id="searchBox" placeholder="Enter Botanical Name">
-        <button>Search</button>
+        <input type="text" id="searchBox" placeholder="Enter Botanical Name" maxlength="20">
+        <button onclick="searchOrchid()">Search</button>
     </div>
 
+    <!-- Filter by Province -->
     <div id="provinceField">
         <label for="provinceSelect">Filter by Province:</label>
-        <select id="provinceSelect">
+        <select id="provinceSelect" onchange="filterByProvince()">
             <option value="">Select a Province</option>
             <option value="Alberta">Alberta</option>
             <option value="British Columbia">British Columbia</option>
@@ -37,6 +39,7 @@
         </select>
     </div>
     
+    <!-- List of Orchid Plants -->
     <ul id="orchidList">
         <li class="orchidPlant">
             <h2>Amerorchis Rotundifolia</h2>

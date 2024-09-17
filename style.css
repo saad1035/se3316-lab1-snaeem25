@@ -1,8 +1,10 @@
+/* Page background and font */
 body {
     background-color: #9CAF88;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Grid layout for orchid list */
 #orchidList {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -11,6 +13,7 @@ body {
     gap: 30px;
 }
 
+/* Individual orchid styling */
 .orchidPlant {
     border: 3px solid #8A6240;
     margin-bottom: 20px;
@@ -19,20 +22,24 @@ body {
     text-align: center;
 }
 
+/* Orchid image styling */
 .orchidPlant img{
     max-width: 250px;
     height: auto;
 }
 
+/* Orchid title styling */
 .orchidPlant h2{
     color: #724A24
 }
 
+/* Main title styling */
 h1 {
     color: #502B0F;
     text-align: center;
 }
 
+/* Search box styling */
 #searchBox {
     width: 210px;
     padding: 10px;
@@ -46,11 +53,13 @@ h1 {
     color: black;
 }
 
+/* Centering the searchField */
 #searchField {
     text-align: center;
     margin-bottom: 20px;
 }
 
+/* Province dropdown styling */
 #provinceSelect{
     width: 235px;
     padding: 10px;
@@ -60,17 +69,20 @@ h1 {
     margin-top: 5px;
 }
 
+/* Centering the provinceField */
 #provinceField {
     text-align: center;
     margin-bottom: 20px;
     margin-right: 65px;
 }
 
+/* Labels for provinceField and searchField */
 label {
     font-weight: bold;
     color: #502B0F;
 }
 
+/* Search button styling */
 button {
     background-color: #CABA9C;
     border: 2px solid #8A6240;
@@ -79,6 +91,7 @@ button {
     cursor: pointer;
 }
 
+/* Button hover effect */
 button:hover {
     background-color: #946D43;
 }
