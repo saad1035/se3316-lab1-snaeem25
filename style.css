@@ -59,41 +59,10 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* Province dropdown styling */
-#provinceSelect{
-    width: 235px;
-    padding: 10px;
-    border: 2px solid #8A6240;
-    background-color: #FBEED7;
-    border-radius: 5px;
-    margin-top: 5px;
-}
-
-/* Centering the provinceField */
-#provinceField {
-    text-align: center;
-    margin-bottom: 20px;
-    margin-right: 65px;
-}
-
 /* Labels for provinceField and searchField */
 label {
     font-weight: bold;
     color: #502B0F;
-}
-
-/* Search button styling */
-button {
-    background-color: #CABA9C;
-    border: 2px solid #8A6240;
-    border-radius: 10px;
-    padding: 10px 40px;
-    cursor: pointer;
-}
-
-/* Button hover effect */
-button:hover {
-    background-color: #946D43;
 }
 
 

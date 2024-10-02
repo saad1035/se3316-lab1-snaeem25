@@ -15,28 +15,22 @@
     <div id="searchField">
         <label for="searchBox">Search by Bontanical Name:</label>
         <input type="text" id="searchBox" placeholder="Enter Botanical Name" maxlength="20">
-        <button onclick="searchOrchid()">Search</button>
     </div>
 
-    <!-- Filter by Province -->
-    <div id="provinceField">
-        <label for="provinceSelect">Filter by Province:</label>
-        <select id="provinceSelect" onchange="filterByProvince()">
-            <option value="">Select a Province</option>
-            <option value="Alberta">Alberta</option>
-            <option value="British Columbia">British Columbia</option>
-            <option value="Manitoba">Manitoba</option>
-            <option value="New Brunswick">New Brunswick</option>
-            <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
-            <option value="Northwest Territories">Northwest Territories</option>
-            <option value="Nova Scotia">Nova Scotia</option>
-            <option value="Nunavut">Nunavut</option>
-            <option value="Ontario">Ontario</option>
-            <option value="Prince Edward Island">Prince Edward Island</option>
-            <option value="Quebec">Quebec</option>
-            <option value="Saskatchewan">Saskatchewan</option>
-            <option value="Yukon">Yukon</option>
-        </select>
+    <div class="provinceCheckBox">
+        <label><input type="checkbox" class="province-checkbox" value="Alberta" checked>Alberta</label>
+        <label><input type="checkbox" class="province-checkbox" value="British Columbia" checked>British Columbia</label>
+        <label><input type="checkbox" class="province-checkbox" value="Manitoba" checked>Manitoba</label>
+        <label><input type="checkbox" class="province-checkbox" value="New Brunswick" checked>New Brunswick</label>
+        <label><input type="checkbox" class="province-checkbox" value="Newfoundland and Labrador" checked>Newfoundland and Labrador</label>
+        <label><input type="checkbox" class="province-checkbox" value="Northwest Territories" checked>Northwest Territories</label>
+        <label><input type="checkbox" class="province-checkbox" value="Nova Scotia" checked>Nova Scotia</label>
+        <label><input type="checkbox" class="province-checkbox" value="Nunavut" checked>Nunavut</label>
+        <label><input type="checkbox" class="province-checkbox" value="Ontario" checked>Ontario</label>
+        <label><input type="checkbox" class="province-checkbox" value="Prince Edward Island" checked>Prince Edward Island</label>
+        <label><input type="checkbox" class="province-checkbox" value="Quebec" checked>Quebec</label>
+        <label><input type="checkbox" class="province-checkbox" value="Saskatchewan" checked>Saskatchewan</label>
+        <label><input type="checkbox" class="province-checkbox" value="Yukon" checked>Yukon</label>
     </div>
     
     <!-- List of Orchid Plants -->
