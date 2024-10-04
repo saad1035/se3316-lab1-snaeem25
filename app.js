@@ -247,48 +247,80 @@ document.addEventListener('DOMContentLoaded', function() {
     
         filteredOrchids.forEach(orchid => {
             const listItem = document.createElement('li');
+            listItem.classList.add('orchidCard');
+
+            const orchidContainer = document.createElement('div');
+            orchidContainer.classList.add('orchidContainer');
+
+            const textContainer = document.createElement('div');
+            textContainer.classList.add('textContainer');
 
             const name = document.createElement('strong');
             name.textContent = orchid.name;
-            listItem.appendChild(name);
+            textContainer.appendChild(name);
 
             const image = document.createElement('img');
             image.src = orchid.image;
             image.alt = orchid.name;
-            listItem.appendChild(image);
+            image.classList.add('orchidImage');
+            orchidContainer.appendChild(image);
 
             const wikipediaLink = document.createElement('a');
             wikipediaLink.href = orchid.wikipediaLink;
             wikipediaLink.textContent = "Learn more on Wikipedia";
-            listItem.appendChild(wikipediaLink);
+            textContainer.appendChild(wikipediaLink);
 
             const province = document.createElement('p');
-            province.textContent = "Provinces: " + orchid.provinces;
-            listItem.appendChild(province);
+            const provinceLabel = document.createElement('strong');
+            provinceLabel.textContent = "Provinces: ";
+            province.appendChild(provinceLabel);
+            province.append(orchid.provinces);
+            textContainer.appendChild(province);
 
             const description = document.createElement('p');
-            description.textContent = orchid.description;
-            listItem.appendChild(description);
+            const descriptionLabel = document.createElement('strong');
+            descriptionLabel.textContent = "Description: ";
+            description.appendChild(descriptionLabel);
+            description.append(orchid.description);
+            textContainer.appendChild(description);
 
             const otherNames = document.createElement('p');
-            otherNames.textContent = "Other Names: " + orchid.otherNames;
-            listItem.appendChild(otherNames);
+            const otherNamesLabel = document.createElement('strong');
+            otherNamesLabel.textContent = "Other Names: ";
+            otherNames.appendChild(otherNamesLabel);
+            otherNames.append(orchid.otherNames);
+            textContainer.appendChild(otherNames);
 
             const specificHabitat = document.createElement('p');
-            specificHabitat.textContent = "Specific Habitat: " + orchid.specificHabitat;
-            listItem.appendChild(specificHabitat);
+            const specificHabitatLabel = document.createElement('strong');
+            specificHabitatLabel.textContent = "Specific Habitat: ";
+            specificHabitat.appendChild(specificHabitatLabel);
+            specificHabitat.append(orchid.specificHabitat);
+            textContainer.appendChild(specificHabitat);
 
             const flowerSeason = document.createElement('p');
-            flowerSeason.textContent = "Flowering Season: " + orchid.flowerSeason;
-            listItem.appendChild(flowerSeason);
+            const flowerSeasonLabel = document.createElement('strong');
+            flowerSeasonLabel.textContent = "Flowering Season: ";
+            flowerSeason.appendChild(flowerSeasonLabel);
+            flowerSeason.append(orchid.flowerSeason);
+            textContainer.appendChild(flowerSeason);
 
             const comments = document.createElement('p');
-            comments.textContent = "Comments: " + orchid.comments;
-            listItem.appendChild(comments);
+            const commentsLabel = document.createElement('strong');
+            commentsLabel.textContent = "Comments: ";
+            comments.appendChild(commentsLabel);
+            comments.append(orchid.comments);
+            textContainer.appendChild(comments);
 
             const references = document.createElement('p');
-            references.textContent = "References: " + orchid.references;
-            listItem.appendChild(references);
+            const referencesLabel = document.createElement('strong');
+            referencesLabel.textContent = "References: ";
+            references.appendChild(referencesLabel);
+            references.append(orchid.references);
+            textContainer.appendChild(references);
+
+            orchidContainer.appendChild(textContainer);
+            listItem.appendChild(orchidContainer);
 
             list.appendChild(listItem);
         });

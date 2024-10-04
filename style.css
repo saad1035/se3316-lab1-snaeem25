@@ -65,6 +65,55 @@ label {
     color: #502B0F;
 }
 
+.orchidCard {
+    background-color: #C8B88A;
+    padding: 20px;
+    border-radius: 30px;
+    border: 2px solid #8A6240;
+    margin-bottom: 30px;
+    list-style: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.orchidContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start; 
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.orchidImage {
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.orchidCard p {
+    margin: 5px 0;
+}
+
+.orchidCard a {
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #4A90E2;
+    font-weight: bold;
+}
+
+.orchidCard strong {
+    font-weight: bold;
+    color: #333;
+}
 
 
 
