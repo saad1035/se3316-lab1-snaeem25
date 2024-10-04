@@ -115,6 +115,31 @@ label {
     color: #333;
 }
 
+.provinceCheckBox {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.provinceCheckBox label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #5A3D1E;
+    padding: 5px;
+    border: 1px solid #8A6240;
+    border-radius: 5px;
+    background-color: #FBEED7;
+    cursor: pointer;
+    text-align: center;
+}
+
+.provinceCheckBox label:hover {
+    background-color: #e8f5e9;
+}
+
+
 
 
 
