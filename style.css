@@ -65,6 +65,7 @@ label {
     color: #502B0F;
 }
 
+/* Styling for individual orchid cards in filtered list */
 .orchidCard {
     background-color: #C8B88A;
     padding: 20px;
@@ -79,6 +80,7 @@ label {
     gap: 20px;
 }
 
+/* Container for the orchid image and the text content */
 .orchidContainer {
     display: flex;
     flex-direction: row;
@@ -86,6 +88,7 @@ label {
     align-items: flex-start; 
 }
 
+/* Text content container within each card */
 .textContainer {
     display: flex;
     flex-direction: column;
@@ -93,16 +96,19 @@ label {
     width: 100%;
 }
 
+/* Styling for orchid images */
 .orchidImage {
     max-width: 200px;
     height: auto;
     border-radius: 10px;
 }
 
+/* Styling for paragraphs in each orchid card */
 .orchidCard p {
     margin: 5px 0;
 }
 
+/* Styling for links in orchid cards */
 .orchidCard a {
     margin-bottom: 10px;
     text-decoration: none;
@@ -110,11 +116,13 @@ label {
     font-weight: bold;
 }
 
+/* Bold text inside orchid cards */
 .orchidCard strong {
     font-weight: bold;
     color: #333;
 }
 
+/* Province checkboxes container */
 .provinceCheckBox {
     display: flex;
     justify-content: space-evenly;
@@ -123,6 +131,7 @@ label {
     width: 100%;
 }
 
+/* Styling for province checkboxes */
 .provinceCheckBox label {
     font-weight: bold;
     font-size: 14px;
@@ -135,6 +144,7 @@ label {
     text-align: center;
 }
 
+/* Hover effect for checkboxes */
 .provinceCheckBox label:hover {
     background-color: #e8f5e9;
 }

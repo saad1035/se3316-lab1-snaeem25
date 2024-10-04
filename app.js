@@ -1,7 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-    // Orchid data with their botanical names and provinces
+    // Orchid data with their botanical names, provinces, descriptions, images path, other names, wikipedia link, location, specific habitat, flower season, comments, and references
     const orchids = [
+
+        // Orchid 1
         { 
             name: "Amerorchis Rotundifolia", 
             provinces: ["Newfoundland and Labrador", "New Brunswick", "Quebec", "Ontario", "Manitoba", "Saskatchewan", "Alberta", "British Columbia", "Yukon", "Northwest Territories"],
@@ -15,6 +17,8 @@ document.addEventListener('DOMContentLoaded', function() {
             comments: "Common in the northwest of the continent, widespread but local in the east. Only two locations in the Bruce Peninsula, rare and apparently approaching extinction in the Ottawa District, loose groups of flowering and non-flowering groups in Eastern Ontario. Highly variable pattern of lip colouration in the species.",
             references: "Guide to Orchids of North America Orchids of Ontario The Orchids of Bruce & Grey"
         },
+
+        // Orchid 2
         { 
             name: "Calypso Bulbosa", 
             provinces: ["Newfoundland and Labrador", "New Brunswick", "Quebec", "Ontario", "Manitoba", "Saskatchewan", "Alberta", "British Columbia", "Yukon", "Northwest Territories"],
@@ -28,6 +32,8 @@ document.addEventListener('DOMContentLoaded', function() {
             comments: "Originally documented in an extensive wooded wetland which is now part of the drained and cultivated Holland Marsh, this orchid now seems to be extinct in what was the southern extreme of its range. Despite its extensive range, this orchid does not survive close contact with man: this once well-established orchid has been reduced to a small number of remote colonies. The white-flowered f. candida has been reported in Bruce County, Manitoulin Island, and Thunder Bay area. Var. occidentalis (Holzinger) Calder & Taylor is presently debated as a species, subspecies, variety, or form. It is more similar to the typical variety found in Eurasia than to ar. Americana. Its habitat is the Pacific Northwest from California to British Columbia. The plant is similar to the typical variety, but the lamina of the lip is mottled or irregularly blotched with purple, and the tuft of bristles is reduced to a few thin whitish hairs. Isolated in the Cascade Mountains and adjacent territory west of the Rocky Mountains in Canada, this variety probably relies on different pollinators, as evidenced by the lack of yellow bristles to attract bees.",
             references: "Orchids of Ontario Orchids of the Northeast The Canadian Field-Naturalist Vol III-1 The Native Orchids of the United States and Canada excluding Florida The Orchids of Bruce & Grey"
         },
+
+        // Orchid 3
         { 
             name: "Cypripedium Reginae", 
             provinces: ["Newfoundland and Labrador", "Nova Scotia", "Prince Edward Island", "New Brunswick", "Quebec", "Ontario", "Manitoba", "Saskatchewan"],
@@ -41,6 +47,8 @@ document.addEventListener('DOMContentLoaded', function() {
             comments: "Cypripedium reginae, like the yellow lady's-slippers, is covered by a dense mat of fine pubescence which can be irritating to the skin of some people in the manner of poison ivy. Cypripedium reginae forma albolabium Fernald and Schubert White Lady's-slipper The white form occurs rarely throughout the range of the species and is frequently found growing among the pink and white slippers. Vegetatively, it is identical to the pink and white form but the lip is completely lacking in pigment. It is sometimes an off-white or ivory. The pure white form has been reported in only three locations in Ontario: the Luther Marsh, the Minesing Swamp, and on the Bruce Peninsula. Across Canada, it can be found from Saskatchewan to Newfoundland.",
             references: "The Genus Cypripedium The Canadian Field-Naturalist Vol III-1 The Native Orchids of the United States and Canada excluding Florida The Orchids of Bruce & Grey"
         },
+
+        // Orchid 4
         { 
             name: "Epipactis Gigantea", 
             provinces: ["British Columbia"],
@@ -54,6 +62,8 @@ document.addEventListener('DOMContentLoaded', function() {
             comments: "Plant is neither rare nor common. It is often locally abundant and very persistent, flourishing for decades in suitable habitats. Syrphid flies are pollinators.",
             references: "The Native Orchids of the United states and Canada excluding Florida"
         },
+
+        // Orchid 5
         { 
             name: "Galearis Spectabilis", 
             provinces: ["New Brunswick", "Quebec", "Ontario"],
@@ -67,6 +77,8 @@ document.addEventListener('DOMContentLoaded', function() {
             comments: "Colonies can persist and multiply for decades if the site does not become heavily shaded or overgrown with vegetation. Special feature is the spade-shaped lip and mauve colouring of all floral parts except the lip which is white. In a rare form, gordinieri (House), the hood or galea is white (Catling, 1982b).",
             references: "The Canadian Field-Naturalist Vol III - 1 The Orchids of Bruce & Grey"
         },
+
+        // Orchid 6
         { 
             name: "Isotria Verticillata", 
             provinces: ["Ontario"],
@@ -80,6 +92,8 @@ document.addEventListener('DOMContentLoaded', function() {
             comments: "To distinguish the non-flowering plant from one of the rare I. Medeoloides, one should compare the stems: The stem of the later is shorter and thicker, whitish green rather than purplish. Both stems are hollow, which distinguishes them from the more slender, fuzzy solid stems of Medeola virginiana (Indian Cucumber) with which it often grows. Also, the leaves of I. Verticulata tend to be a darker green and more blunt than I. medeoloides.",
             references: "Orchids of Ontario Orchids of the Northeast The Native Orchids of the United States and Canada excluding Florida"
         },
+
+        // Orchid 7
         { 
             name: "Listera Australis", 
             provinces: ["Nova Scotia", "Ontario", "Quebec"],
@@ -93,6 +107,8 @@ document.addEventListener('DOMContentLoaded', function() {
             comments: "Correll (1950) declared this probably the rarest orchid to be found in Eastern Canada. Some plants at Alfred Bog, rare in Ontario and Quebec. In 1973 over 40 plants were found scattered in Alfred Bog in Prescott County (Ottawa Region) and more sites were discovered in northern Simcoe County, Muskoka, Algonquin, and Killbear Provincial Park (Whiting & Catling, 1986).",
             references: "Orchids of Ontario The Canadian Field-Naturalist Vol III - 1"
         },
+
+        // Orchid 8
         { 
             name: "Listera Ovata", 
             provinces: ["Ontario"],
@@ -106,6 +122,8 @@ document.addEventListener('DOMContentLoaded', function() {
             comments: "A much larger plant than our native Twayblades. Vigorous and widespread in a variety of habitats throughout Europe, excepting Portugal, and extending into Siberia and India. First discovered, near Red Bay in the Bruce Peninsula by Bessie Plunkett of Thunder Bay. In 1980 a second colony was discovered in southwestern Wellington County (Anderson and Goltz).",
             references: "Orchids of Ontario The Orchids of Bruce & Grey"
         },
+
+        // Orchid 9
         { 
             name: "Piperia Elegans", 
             provinces: ["British Columbia"],
@@ -119,6 +137,8 @@ document.addEventListener('DOMContentLoaded', function() {
             comments: "Reaches its peak of flowering a little later in the season than P. unalascensis",
             references: "The Native Orchids of the United States and Canada excluding Florida."
         },
+
+        // Orchid 10
         { 
             name: "Piperia Maritima", 
             provinces: ["British Columbia"],
@@ -132,6 +152,8 @@ document.addEventListener('DOMContentLoaded', function() {
             comments: "May be found near an occasional Spiranthes romanzoffiana which occupies similar habitat. P. elegans can be found growing on nearby wooded hillsides.",
             references: "The Native Orchids of the United States and Canada excluding Florida"
         },
+
+        // Orchid 11
         { 
             name: "Platanthera Ciliaris", 
             provinces: ["Ontario"],
@@ -145,6 +167,8 @@ document.addEventListener('DOMContentLoaded', function() {
             comments: "The presence of Platanthera ciliaris in Canada is known through historical sightings and collections and is now thought to be extinct here. In 1995, Allan B. Anderson with the University of Guelph attempted to re-introduce the plant with artificially cultured seedlings in the Windsor area. cutbacks at the University, Mr. Anderson has not had an opportunity to check on their success.",
             references: "Orchids of Ontario Orchids of the Western Great Lakes Region"
         },
+
+        // Orchid 12
         { 
             name: "Platanthera Lacera", 
             provinces: ["Nova Scotia", "Prince Edward Island", "New Brunswick", "Quebec", "Ontario", "Manitoba"],
@@ -158,6 +182,8 @@ document.addEventListener('DOMContentLoaded', function() {
             comments: "Plants are easily over-looked, being inconspicuous among the grasses and sedges with which they are associated.",
             references: "Orchids of Ontario The Canadian Field-Naturalist The Orchids of Bruce & Grey"
         },
+
+        // Orchid 13
         { 
             name: "Spiranthes Casei", 
             provinces: ["Nova Scotia", "Quebec", "Ontario"],
@@ -171,6 +197,8 @@ document.addEventListener('DOMContentLoaded', function() {
             comments: "Only recognized as a separate species in 1974. Orchid is distinguished from S. cernua by its off-white rather than pure white flowers, and arrangement in a single, corkscrew-like spiral.",
             references: "Orchids of Ontario Orchids of the Northeast The Canadian Field-Naturalist The Orchids of Bruce & Grey"
         },
+
+        // Orchid 14
         { 
             name: "Spiranthes Lucida", 
             provinces: ["Ontario", "Nova Scotia", "Prince Edward Island", "New Brunswick", "Quebec", "Ontario"],
@@ -184,6 +212,8 @@ document.addEventListener('DOMContentLoaded', function() {
             comments: "This is the smallest, earliest blooming and least abundant of our spiranthes. The white flower with the deep saffron yellow lip is a colour combination that is unique in Ontario orchids.",
             references: "Orchids of Ontario The Canadian Field-Naturalist Vol III-1 The Native Orchids of the United States and canada excluding Florida The Orchids of Bruce & Grey"
         },
+
+        // Orchid 15
         { 
             name: "Spiranthes Ochroleuca", 
             provinces: ["Newfoundland and Labrador", "Nova Scotia", "Ontario"],
@@ -207,10 +237,11 @@ document.addEventListener('DOMContentLoaded', function() {
         return regex.test(input);
     }
 
+    // Function to filter orchids based on search query and selected provinces
     function filterOrchids() {
-
         const provinceCheckboxes = document.querySelectorAll('.province-checkbox');
     
+        // Collect selected provinces from the checkboxes
         let selectedProvinces = [];
         provinceCheckboxes.forEach(checkbox => {
             if (checkbox.checked) {
@@ -220,56 +251,68 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const query = document.getElementById('searchBox').value.trim();
 
+        // If input of search box is empty or invalid, clear the results and return
         if (!validateInput(query) || query === "") {
             clearResults();
             return;
         }
     
+        // Filter orchids based on the search query and selected provinces
         const filteredOrchids = orchids.filter(orchid => 
             orchid.name.toLowerCase().includes(query.toLowerCase()) && selectedProvinces.some(province => orchid.provinces.includes(province))
         );
     
+        // Display the filtered list of orchids
         displayOrchidList(filteredOrchids);
     }
 
+    // Function to display the filtered list of orchids
     function displayOrchidList(filteredOrchids) {
 
+        // Clear any existing results
         clearResults();
     
+        // If no orchids match the filter, exit
         if (filteredOrchids.length === 0) {
             return;
         }
 
+        // Create a container to hold the results
         const block = document.createElement('div');
         block.id = 'resultsBlock'
         const list = document.createElement('ul');
         block.appendChild(list);
     
+        // Iterate over each filtered orchid and display its details
         filteredOrchids.forEach(orchid => {
             const listItem = document.createElement('li');
             listItem.classList.add('orchidCard');
 
+            // Create containers for orchid image and text
             const orchidContainer = document.createElement('div');
             orchidContainer.classList.add('orchidContainer');
-
             const textContainer = document.createElement('div');
             textContainer.classList.add('textContainer');
 
+            // Orchid name
             const name = document.createElement('strong');
             name.textContent = orchid.name;
             textContainer.appendChild(name);
 
+            // Orchid image
             const image = document.createElement('img');
             image.src = orchid.image;
             image.alt = orchid.name;
             image.classList.add('orchidImage');
             orchidContainer.appendChild(image);
 
+            // Link to the orchid's wikipedia page
             const wikipediaLink = document.createElement('a');
             wikipediaLink.href = orchid.wikipediaLink;
             wikipediaLink.textContent = "Learn more on Wikipedia";
             textContainer.appendChild(wikipediaLink);
 
+            // Provinces where the orchid is found
             const province = document.createElement('p');
             const provinceLabel = document.createElement('strong');
             provinceLabel.textContent = "Provinces: ";
@@ -277,6 +320,7 @@ document.addEventListener('DOMContentLoaded', function() {
             province.append(orchid.provinces);
             textContainer.appendChild(province);
 
+            // Orchid description
             const description = document.createElement('p');
             const descriptionLabel = document.createElement('strong');
             descriptionLabel.textContent = "Description: ";
@@ -284,6 +328,7 @@ document.addEventListener('DOMContentLoaded', function() {
             description.append(orchid.description);
             textContainer.appendChild(description);
 
+            // Other names for the orchid
             const otherNames = document.createElement('p');
             const otherNamesLabel = document.createElement('strong');
             otherNamesLabel.textContent = "Other Names: ";
@@ -291,6 +336,7 @@ document.addEventListener('DOMContentLoaded', function() {
             otherNames.append(orchid.otherNames);
             textContainer.appendChild(otherNames);
 
+            // Specific habitat for the orchid
             const specificHabitat = document.createElement('p');
             const specificHabitatLabel = document.createElement('strong');
             specificHabitatLabel.textContent = "Specific Habitat: ";
@@ -298,6 +344,7 @@ document.addEventListener('DOMContentLoaded', function() {
             specificHabitat.append(orchid.specificHabitat);
             textContainer.appendChild(specificHabitat);
 
+            // Flowering season for the orchid
             const flowerSeason = document.createElement('p');
             const flowerSeasonLabel = document.createElement('strong');
             flowerSeasonLabel.textContent = "Flowering Season: ";
@@ -305,6 +352,7 @@ document.addEventListener('DOMContentLoaded', function() {
             flowerSeason.append(orchid.flowerSeason);
             textContainer.appendChild(flowerSeason);
 
+            // Comments about the orchid
             const comments = document.createElement('p');
             const commentsLabel = document.createElement('strong');
             commentsLabel.textContent = "Comments: ";
@@ -312,6 +360,7 @@ document.addEventListener('DOMContentLoaded', function() {
             comments.append(orchid.comments);
             textContainer.appendChild(comments);
 
+            // References for the orchid
             const references = document.createElement('p');
             const referencesLabel = document.createElement('strong');
             referencesLabel.textContent = "References: ";
@@ -319,16 +368,20 @@ document.addEventListener('DOMContentLoaded', function() {
             references.append(orchid.references);
             textContainer.appendChild(references);
 
+            // Append text container and image container to the list item
             orchidContainer.appendChild(textContainer);
             listItem.appendChild(orchidContainer);
 
+            // Append the list item to the list 
             list.appendChild(listItem);
         });
 
+        // Insert the results block after the search field
         const searchField = document.getElementById('searchField');
         searchField.parentNode.insertBefore(block, searchField.nextSibling);
     }
 
+    // Function to clear any existing results
     function clearResults() {
         let existingResult = document.getElementById('resultsBlock');
         if (existingResult) {
@@ -336,8 +389,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+    // Event listener to trigger filtering when search input changes
     document.getElementById('searchBox').addEventListener('input', filterOrchids);
 
+    // Event listeners for each province checkbox to trigger filtering when the selection changes
     document.querySelectorAll('.province-checkbox').forEach((checkbox) => {
         checkbox.addEventListener('change', filterOrchids); 
     })
